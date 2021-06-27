@@ -19,6 +19,8 @@
     <link rel="stylesheet" href="<?php echo base_url() ?>/admin/plugins/jqvmap/jqvmap.min.css">
     <!-- Theme style -->
     <link rel="stylesheet" href="<?php echo base_url() ?>/admin/css/adminlte.min.css">
+    <!-- Custom style -->
+    <link rel="stylesheet" href="<?php echo base_url() ?>/admin/css/custom.css">
     <!-- overlayScrollbars -->
     <link rel="stylesheet" href="<?php echo base_url() ?>/admin/plugins/overlayScrollbars/css/OverlayScrollbars.min.css">
     <!-- Daterange picker -->
@@ -90,6 +92,11 @@
     <script src="<?php echo base_url() ?>/admin/js/pages/dashboard.js"></script>
     <!-- AdminLTE for demo purposes -->
     <script src="<?php echo base_url() ?>/admin/js/demo.js"></script>
+    <script>
+        $(".delete").on("submit", function() {
+            return confirm("Do you want to remove this?");
+        });
+    </script>
 </body>
 
 </html>
